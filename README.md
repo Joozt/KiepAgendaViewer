@@ -10,4 +10,4 @@ Features:
 - Divide in blocks with `<new-block>` tag in ASP content
 - Next page or exit with mouse click, numpad `+` or numpad `/`
 
-This application uses a [low level keyboard hook](LowLevelKeyboardHook.cs), in order to catch the key presses even if another application (like Tobii Dynavox Communicator) is preventing the keys to reach the application.
+This application uses a [low level keyboard hook](LowLevelKeyboardHook.cs), in order to catch the key presses even if another application (like [Tobii Dynavox Communicator](http://www.tobiidynavox.com/)) is preventing the keys to reach the application.
