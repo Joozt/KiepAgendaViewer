@@ -1,0 +1,11 @@
+﻿<Window x:Class="KiepAgendaViewer.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="KiepAgendaViewer" Height="300" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None" MouseDown="MouseDownHandler" FontFamily="Arial" FontWeight="Bold" Background="White" Foreground="Black" Icon="Icon.ico">
+    
+    <Grid>
+        <Viewbox><StackPanel Name="spViewer" /></Viewbox>
+        <Image Margin="20" Name="imgStatus" Stretch="None" Source="Sync.png" VerticalAlignment="Bottom" HorizontalAlignment="Right" StretchDirection="DownOnly" />
+    </Grid>
+    
+</Window>
