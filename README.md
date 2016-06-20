@@ -1,6 +1,6 @@
 # KiepAgendaViewer
 ### A C# WPF application for displaying a fullscreen Google Calendar proxied through ASP
-This application is a fullscreen UI to read Google Calendar, for visual impaired. It is proxied through an [ASP.NET website](KiepAgendaProxy/), so the content can be optimized and adjusted without redeploying the application.
+This application is a fullscreen UI to read Google Calendar, for visual impaired. It is proxied through an [ASP.NET website](KiepAgendaProxy/), so the content can be optimized and adjusted without redeploying the application. It is similar to the [KiepVisitorRegistration](https://github.com/Joozt/KiepVisitorRegistration) project.
 
 Features:
 - Show ASP content fullscreen
