@@ -290,7 +290,7 @@ namespace KiepAgendaViewer
                 string url = (string)e.Argument;
                 WebRequest webRequest = WebRequest.Create(url);
                 webRequest.Proxy = null;
-                webRequest.Timeout = 5000;
+                webRequest.Timeout = 40000;
                 Stream responseStream = webRequest.GetResponse().GetResponseStream();
                 StreamReader reader = new StreamReader(responseStream);
                 string responseFromServer = reader.ReadToEnd();
