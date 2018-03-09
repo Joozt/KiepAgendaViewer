@@ -11,7 +11,7 @@
         {
             day = Request.QueryString["day"];
         }
-        Response.Write(KiepAgendaProxy.KiepAgendaProxy.getDayEvents(url, day));
+        Response.Write(KiepAgendaProxy.AgendaDownloader.getDayEvents(url, day));
     }
     catch (Exception) { }
 %>
