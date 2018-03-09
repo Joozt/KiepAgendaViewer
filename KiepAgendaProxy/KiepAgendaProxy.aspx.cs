@@ -2,9 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace KiepAgendaProxy
 {
@@ -85,15 +82,15 @@ namespace KiepAgendaProxy
                             {
                                 if (occurrence.Period.Duration.Equals(new TimeSpan(0)))
                                 {
-                                    result.Append(occurrence.Period.StartTime.Local.ToString("t"));
+                                    result.Append(occurrence.Period.StartTime.Value.ToLocalTime().ToString("t"));
                                     result.Append("\t");
                                 }
                                 else
                                 {
                                     hasEndTimes = true;
-                                    result.Append(occurrence.Period.StartTime.Local.ToString("t"));
+                                    result.Append(occurrence.Period.StartTime.Value.ToLocalTime().ToString("t"));
                                     result.Append(" - ");
-                                    result.Append(occurrence.Period.EndTime.Local.ToString("t"));
+                                    result.Append(occurrence.Period.EndTime.Value.ToLocalTime().ToString("t"));
                                 }
                             }
                         }
